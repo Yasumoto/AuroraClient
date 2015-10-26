@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FAED1C1E4B69E6485694CB98348F85D9696D533C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0C00297339B575E3261138878C87129693D3B4D0" : 0,
+    "FAED1C1E4B69E6485694CB98348F85D9696D533C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B2D0BAF5-13BF-48D1-A385-9D14D5D0E5A7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0C00297339B575E3261138878C87129693D3B4D0" : "thrift\/",
+    "FAED1C1E4B69E6485694CB98348F85D9696D533C" : "AuroraClient\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AuroraClient",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AuroraClient.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/apache\/thrift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0C00297339B575E3261138878C87129693D3B4D0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Yasumoto\/AuroraClient.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FAED1C1E4B69E6485694CB98348F85D9696D533C"
+    }
+  ]
+}

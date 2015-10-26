@@ -9,9 +9,39 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Thrift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>thrift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>402303811BDDA71100BC3416</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>402303BF1BDDA84D00BC3416</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>402303D01BDDA88F00BC3416</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4023040D1BDDA94600BC3416</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>409BC3D11BB4C812009A48AC</key>
 		<dict>
 			<key>primary</key>
