@@ -7,7 +7,7 @@
 
 import Foundation
 
-import Thrift
+import thrift
 
 
 public enum ResponseCode : Int32 {
@@ -1662,7 +1662,7 @@ public protocol ReadOnlyScheduler {
   func getJobUpdateDetailsWithKey(key: JobUpdateKey) throws -> Response  // exceptions: 
 }
 
-public class ReadOnlySchedulerClient /* : ReadOnlyScheduler */ {
+public class ReadOnlySchedulerClient : ReadOnlyScheduler {
 
   let __inProtocol : TProtocol
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-import Thrift
+import thrift
 
 
 extension ResponseCode : TEnum {
@@ -7161,7 +7161,7 @@ extension Response : Hashable {
     var result = 1
     result = prime * result + (responseCode.hashValue)
     result = prime * result + (serverInfo.hashValue)
-    result = prime * result + (result?.hashValue ?? 0)
+    result = prime * result + (result.hashValue)
     result = prime * result + (details.hashValue)
     return result
   }
@@ -9407,7 +9407,7 @@ extension ReadOnlyScheduler_getJobUpdateDetails_result : TStruct {
 
 
 
-extension ReadOnlySchedulerClient : ReadOnlyScheduler {
+extension ReadOnlySchedulerClient /* : ReadOnlyScheduler */ {
 
   private func send_getRoleSummary() throws {
 

@@ -7,21 +7,35 @@
 //
 
 import Foundation
+import thrift
 
 /**
  * Helper to connect to the scheduler
  */
-class Aurora {
+class AuroraAPI {
     var schedulerPort = 2223
     var schedulerHostname = "localhost"
 
     func getJobs() {
-        let schedulerURL = NSURL(string: "http://\(schedulerHostname):\(schedulerPort)")
-        let scheduler = ReadOnlySchedulerClient()
-        //scheduler.
+        let schedulerURL = NSURL(string: "http://\(schedulerHostname):\(schedulerPort)/api")
+        let session = NSURLSession.sharedSession()
+
         if let url = schedulerURL {
-            let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: handleSchedulerResponse)
-            task.resume()
+            let thriftClientFactory = THTTPSessionTransportFactory.init(session: session, URL: url)
+            let thriftProtocol = TBinaryProtocolFactory.sharedFactory().newProtocolOnTransport(thriftClientFactory.newTransport())
+            let client = ReadOnlySchedulerClient(inoutProtocol: thriftProtocol)
+            do {
+                let roleResponse = try client.getRoleSummary()
+                print(roleResponse)
+            } catch let error as TTransportError {
+                print("Transport Error: \(error)")
+            } catch let error as TProtocolError {
+                print("Protocol Error: \(error)")
+            } catch let error as TProtocolExtendedError {
+                print("Protocol Extended Error: \(error)")
+            } catch let error as NSError {
+                print("DOH!: \(error)")
+            }
         } else {
             print("Error: Bad Scheduler URI: \(schedulerHostname):\(schedulerPort)")
         }

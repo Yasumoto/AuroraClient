@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let client = Aurora()
+        let client = AuroraAPI()
         client.getJobs()
     }
 }

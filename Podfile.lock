@@ -1,0 +1,14 @@
+PODS:
+  - thrift (1.0.0)
+
+DEPENDENCIES:
+  - thrift (from `/Users/jsmith/Documents/thrift`)
+
+EXTERNAL SOURCES:
+  thrift:
+    :path: "/Users/jsmith/Documents/thrift"
+
+SPEC CHECKSUMS:
+  thrift: 8af25b19dfdecac5e33f0aa424fbee6a2511c28b
+
+COCOAPODS: 0.39.0
